@@ -99,27 +99,44 @@ header {
   border: 15px solid pink;
 }
 .nav-bar {
-  border: 1px solid limegreen;
+  border: 2px solid limegreen;
 }
 .title-container {
-  widows: 100%;
-  height: 100%;
   border: 10px solid orange;
+  width: 90%;
+  height: 65vh;
+  margin: 0 auto;
 }
 .top-container {
   border: 10px solid dodgerblue;
 }
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 48%;
+}
 .img {
   border: 1px solid gray;
 }
+.artists-container {
+  display: flex;
+  margin-top: 20%;
+  justify-content: space-between;
+}
 .bio {
-  border: 1px solid red;
+  border: 5px solid red;
 }
 .artist {
   border: 10px solid yellow;
-  width: 95%;
   display: flex;
+  align-items: flex-end;
+  width: 40%;
   flex-direction: column;
+  align-items: baseline;
+}
+.artist img {
+  width: 300px;
 }
 .title-container {
   background-image: url("../assets/home.png");
