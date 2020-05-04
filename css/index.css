@@ -7,6 +7,7 @@
   padding: 0.5em 2.5em;
   border-radius: 2px;
   width: 10%;
+  margin: 0 auto;
 }
 html,
 body,
@@ -162,13 +163,19 @@ header {
 .title-container {
   background-image: url("../assets/home.png");
   display: flex;
-  flex-wrap: wrap-reverse;
+  justify-content: column;
+  flex-direction: column;
 }
 .Influential {
+  display: flex;
+  justify-content: column;
+  align-items: baseline;
   font-size: 45px;
-  width: 40%;
+  width: 35%;
   color: white;
-  height: 20%;
+  border: 2px solid black;
+  padding: 140px 80px 0px 380px
+  
 }
 .btn {
   display: flex;
