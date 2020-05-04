@@ -207,13 +207,20 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
-artists.name[0]
-artists.bio[3]
+console.log(artist[0].name);
+console.log(artist[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists.name[8] = 'Vincent Van Gogh';
 console.log(artists.name);
+
+const fixed = artists.map(artist => {
+  if (artist.name === "Vincent van Dough")
+    artist.name = "Vincent Van Gogh";
+  return artist;
+});
+console.log(fixed);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -241,7 +248,7 @@ function getArtistByIndex(id, name) {
 function removeArtist(/*code here*/) {
     /* code here */
   }
-  
+  removeArtist(artists1,artists2)
   /**
 
 
@@ -263,15 +270,25 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(){
+  const myInfo = {
 
+  "id": 21,
+  "name": "Kevin Bing", 
+  "years": "1979 - current day",
+  "genre": "Web Design", 
+  "nationality": "German Irish decent born in United States",
+  "bio": "Just a man that is enjoyinh his life. Taking a different path at the moment and chasing the pot of gold at the end of the rainbow.",
+}
     /* Code here */
 
   }
+function addArtist(info){
+artists.push(info);
+}
 
-
-
-
+addArtist(myInfo);
+  console.log(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
