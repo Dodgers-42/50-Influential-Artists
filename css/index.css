@@ -97,14 +97,22 @@ video {
   vertical-align: baseline;
 }
 header {
-  border: 15px solid pink;
+  border: 30px solid pink;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  height: 150px;
 }
 .nav-bar {
   border: 2px solid limegreen;
-  text-decoration: none;
+  width: 300px;
   font-size: 24px;
+  text-align: center;
+}
+.nav-bar a {
+  color: grey;
+  text-decoration: none;
+  width: 20px;
 }
 .title-container {
   border: 10px solid orange;
@@ -115,33 +123,38 @@ header {
 .top-container {
   border: 20px solid dodgerblue;
 }
-.home {
+.home-container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 48%;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 .img {
   border: 10px solid gray;
+  border-radius: 4px;
 }
 .artists-container {
   display: flex;
   margin-top: 20%;
   justify-content: space-between;
+  border-radius: 4px;
 }
 .bio {
   border: 5px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 .artist {
   border: 10px solid yellow;
   display: flex;
   align-items: flex-end;
-  width: 40%;
+  width: 50%;
   flex-direction: column;
   align-items: baseline;
   border-radius: 4px;
+  align-items: center;
 }
 .artist img {
   width: 300px;
@@ -149,11 +162,21 @@ header {
 .title-container {
   background-image: url("../assets/home.png");
   display: flex;
-  justify-content: column;
+  flex-wrap: wrap-reverse;
 }
 .Influential {
   font-size: 45px;
   width: 40%;
   color: white;
   height: 20%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  box-shadow: 0 8px 16px 0 grey;
+}
+.artist .bio {
+  align-items: center;
 }
