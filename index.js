@@ -232,7 +232,7 @@ console.log(artists[8].name);
 */
 function getArtistByIndex(index,array) {
   // /* code here */
-  // console.log(array[index].name) 
+  console.log(array[index].name) 
   return`The artist at index ${array[index].id} is ${array[index].name}.`
 
 
@@ -250,13 +250,13 @@ getArtistByIndex(15,artists)
 * For example, if removeArtist is invoked with the data and the number 0,
 * it will remove Amedeo Modigliani from our dataset.
 */
-// function removeArtist(index,array) {
+function removeArtist(index,array) {
 //     /* code here */
-//     array.splice(index, 1,);
-//     console.log(array[9])
+    array.splice(index, 1,);
+    console.log(array[9])
   
-//   }
-//   removeArtist(9,artists)
+  }
+  removeArtist(9,artists)
 /**
 
 
