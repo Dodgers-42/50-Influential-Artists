@@ -121,7 +121,6 @@ header {
   width: 90%;
   height: 65vh;
   margin: 0 auto;
-  flex-direction: column;
 }
 .home-container {
   display: flex;
@@ -176,7 +175,7 @@ header {
   align-items: center;
   font-size: 45px;
   width: 35%;
-  margin: 0 auto;
+  margin: 100px auto 0;
   text-align: center;
   color: white;
 }
@@ -194,8 +193,8 @@ header {
   color: black;
 }
 .artist .names a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 .artist .names .bio {
   align-items: center;
