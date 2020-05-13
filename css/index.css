@@ -103,9 +103,9 @@ header {
   align-items: flex-end;
   height: 150px;
   padding: 0px 0px 60px;
+  word-spacing: 10px;
 }
 .nav-bar {
-  border: 2px solid limegreen;
   width: 300px;
   font-size: 24px;
   text-align: center;
@@ -116,24 +116,21 @@ header {
   width: 20px;
 }
 .title-container {
+  display: flex;
+  justify-content: column;
   width: 90%;
   height: 65vh;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-.top-container {
-  border: 20px solid dodgerblue;
 }
 .home-container {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding-top: 5%;
   border-radius: 4px;
 }
 .img {
-  border: 10px solid gray;
   border-radius: 4px;
 }
 .artists-container {
@@ -145,15 +142,14 @@ header {
   margin: 0 auto;
 }
 .bio {
-  border: 5px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   text-align: center;
+  width: 65%;
 }
 .artist {
-  border: 10px solid yellow;
   display: flex;
   align-items: flex-end;
   width: 50%;
@@ -167,10 +163,12 @@ header {
   border-radius: 8px;
 }
 .title-container {
-  background-image: url("../assets/home.png");
   display: flex;
   justify-content: column;
+  background-image: url("../assets/home.png");
   flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
 }
 .Influential {
   display: flex;
@@ -181,7 +179,6 @@ header {
   margin: 0 auto;
   text-align: center;
   color: white;
-  border: 2px solid black;
 }
 .btn {
   display: flex;
@@ -191,10 +188,13 @@ header {
   box-shadow: 0 8px 16px 0 grey;
 }
 .artist .names {
-  border: 2px solid black;
   text-decoration: none;
   font-size: 25px;
   padding: 15px;
+  color: black;
+}
+.artist .names a {
+  text-decoration: none;
   color: black;
 }
 .artist .names .bio {

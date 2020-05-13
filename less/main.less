@@ -1,18 +1,13 @@
 .home-container{
-    display: flex;
-    // flex: 1;
-    // justify-content: space-around;
-    // align-items: flex-end;
-    justify-content: center;
-    // flex-direction: column;
+    .center();
     margin: 0 auto;
-    // width: 48%;
+    padding-top: 5%;
     border-radius: 4px;
 }
     .img{
-        border: 10px solid gray;
+        // border: 10px solid gray;
         border-radius: 4px;
-        // flex: 1;
+        
     }
  .artists-container{
      display:flex;
@@ -25,35 +20,25 @@
     
  }   
     .bio{
-        // flex: 1;
-        border: 5px solid red;
-        display:flex;
-        justify-content: center;
+        // border: 5px solid red;
+        .center();
         align-items: center;
         border-radius: 4px;
         text-align: center;
+        width: 65%;
     }
     
     .artist{
-        border: 10px solid yellow;
-        // flex: 1;
+        // border: 10px solid yellow; 
         display:flex;
-        // flex-direction:column-reverse;
-        // justify-content: ;
-        align-items:flex-end ;
-        // margin: 0 auto;
+        align-items:flex-end ;  
         width: 50%;
-    //    height: 20%
-        // flex-wrap:wrap;
         flex-direction: column;
         align-items: baseline;
         border-radius: 4px;
         align-items: center;
-        // text-align: center;
-        // border-radius: 4px;
-    
+       
         img{
-
         width:300px;
         border-radius: 8px;
 
@@ -61,52 +46,47 @@
 }
 
 .title-container{
+    .column();
     background-image: url("../assets/home.png");
-    display: flex;
-    justify-content: column;
-    // justify-content: baseline;
     flex-direction: column;
-    // justify-content: space-around;
-    // flex-wrap: wrap-reverse;
-    // margin: 0 auto;
+    margin: 0 auto;
+    width: 70%;
+
+    
     
 }
     .Influential{
-
-        display: flex;
-        justify-content: column;
+        .column();
         align-items: center;
         font-size: 45px;
         width: 35%;
         margin: 0 auto;
         text-align: center;
         color: white;
-        border: 2px solid black
+        // border: 2px solid black
         
-        // height: 20%;
-        // box-shadow: 0 8px 16px 0 lightgrey;
+       
     }
    
     .btn{
-        display: flex;
-        justify-content: center;
+        .center();
         align-items: center;
-
         height: 30px;
         box-shadow: 0 8px 16px 0 grey;
     }
 
 .artist{
-    // color: black;
-    // text-decoration: none;
+    
     .names{
-        border: 2px solid black;
+        // border: 2px solid black;
         text-decoration: none;
         font-size: 25px;
         padding: 15px;
-        // font-weight: 700;
         color: black;
-    
+        a{
+            text-decoration: none;
+            color: black;
+        }
     .bio{
         align-items: center;
     }
